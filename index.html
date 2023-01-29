@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo CV</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--importo tipografia-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body id="documento">
+    <header class="encabezado">
+        <div>
+            <h1>John Lawrence <img id="foto_perfil" src="https://randomuser.me/api/portraits/med/men/96.jpg"> 
+            <button type="button" id="modo_nocturno">cambiar modo <img id="imag_luna"src="https://as2.ftcdn.net/v2/jpg/04/30/91/53/500_F_430915378_YbDtfqlwzNOELvNBIsgAKxSgj5HKqy3E.jpg"></button>
+            </h1>
+        </div>
+        <div>
+            <ul class="direcciones_de_contacto">
+                <li>E-Mail:123@gmail.com</li>
+                <li>Cel: 12345677</li>
+                <li>Direccion: Chicago 7832</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="menu_secciones">
+                <a href="#informacion_personal">información personal</a>
+                <a href="#experiencia">experiencia</a>
+                <a href="#video_presentacion">video presentación</a>
+                <a href="#habilidades">habilidades</a>
+                <a href="#contactar">contactar</a>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="informacion_personal">
+        <a name="informacion_personal"></a>
+        <h3 id="titulo_inf_personal">Información Personal</h3>
+        <p id="animacion_inf_personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque congue hendrerit arcu, blandit ornare tortor posuere id.
+            Vestibulum accumsan vestibulum dui porttitor iaculis. Maecenas in massa neque.
+            In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Sed efficitur urna dui, non commodo tellus imperdiet eget.
+            Vestibulum varius consequat blandit. Mauris mollis ex eu ligula mattis fermentum.
+            Ut commodo eros nulla, eu rhoncus diam commodo id. Nullam sodales hendrerit
+            lacus, non laoreet ipsum ultricies vitae</p>
+    </section>
+
+
+    <section class="experiencia">
+        <a name="experiencia"></a>
+        <h3 id="titulo_exp">Experiencia</h3>
+        <p id="animacion_exp">Nullam aliquam cursus dui sit amet finibus.
+            Vestibulum sit amet elementum massa, quis ultricies justo.
+            Ut ac felis euismod, posuere elit venenatis, vulputate ex.
+            Donec laoreet ex non euismod mattis. Aenean et ornare orci.
+            Vivamus elementum sed lorem sit amet malesuada. Cras cursus
+            sapien eu nulla blandit vulputate. Quisque quis efficitur 
+            lectus. Nunc porta sodales iaculis. Integer vel egestas nulla,
+            eu mollis nisi.</p>
+    </section>
+
+
+    <section>
+        <a name="video_presentacion"></a>
+        <h3>Video Presentación</h3>
+        <button type="button" id="boton_video_pres">Ver Video</button>
+
+        <iframe id="video" width="420" height="315"
+        src="https://cdn.profesional.ticmas.io/videos/academy-intro.mp4"></iframe>
+    </section>
+
+
+    <section class="habilidades">
+        <a name="habilidades"></a>
+        <h3 id="titulo_habilidades">habilidades</h3>
+        <p id="animacion_habilidades">Nam facilisis non urna quis aliquet. Integer vitae felis non 
+            massa varius lobortis. Duis sapien tortor, hendrerit vel est 
+            non, suscipit hendrerit purus. Nunc euismod sollicitudin 
+            dignissim. Donec consectetur, risus sit amet vehicula laoreet,
+            velit nisi fringilla lectus, ut finibus felis dui a ipsum.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Duis erat dolor, interdum vitae eros ac, 
+            consequat pharetra quam. Fusce fermentum metus ut quam lobortis 
+            auctor. Vestibulum consequat tellus ut sapien accumsan, ac 
+            condimentum odio aliquam. Aliquam consequat dapibus urna, eu
+            mollis nisl dapibus non. Etiam molestie, libero quis pellentesque
+            luctus, sem lectus maximus quam, eu varius est lectus id mauris.
+            Morbi eget neque egestas, aliquam sapien non, scelerisque quam. 
+            Curabitur dignissim dolor nisl, vitae dapibus sapien tincidunt et.</p>
+    </section>
+    <footer>
+        <a name="contactar"></a>
+        <button type="button" id="boton_contactar">Contactar</button>
+        <form id="formulario" >
+            <label>Nombre</label>
+            <input type="text" placeholder="Ingrese su Nombre" />
+            <label>Apellido</label>
+            <input type="text" placeholder="Ingrese su Apellido" />
+            <label>E-Mail</label>
+            <input type="email" placeholder="Ingrese su E-mail" />
+            <label>Mensaje</label>
+            <input type="text" placeholder="Ingrese su Mensaje" />
+            <input id="boton_enviar" type="submit" value="Enviar">
+        </form>
+        <p id="msj_agradecimiento">Muchas Gracias por su Mensaje! Me contactare a la brevedad con Usted!</p>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+</html>
